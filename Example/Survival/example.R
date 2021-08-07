@@ -2,6 +2,8 @@
 # with Cox regression as the outcome model and survival outcomes
 
 library("survival") # to fit Cox proportional hazards regression
+library("copula") # for simulating BC covariates from Gaussian coupla
+library("boot") # for non-parametric bootstrap
 
 set.seed(555) # set seed for reproducibility
 
