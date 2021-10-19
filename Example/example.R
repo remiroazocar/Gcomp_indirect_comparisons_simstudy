@@ -133,8 +133,8 @@ gcomp.ml <- function(data, indices) {
   # predict counterfactual event probs, conditional on treatment/covariates
   hat.mu.A.i <- predict(outcome.model, type="response", newdata=data.trtA)
   hat.mu.C.i <- predict(outcome.model, type="response", newdata=data.trtC)
-  hat.mu.A <- mean(hat.mu.A.i) # mean probability prediction under A
-  hat.mu.C <- mean(hat.mu.C.i) # mean probability prediction under C
+  hat.mu.A <- mean(hat.mu.A.i) # (marginal) mean probability prediction under A
+  hat.mu.C <- mean(hat.mu.C.i) # (marginal) mean probability prediction under C
   # marginal A vs. C log-odds ratio (mean difference in expected log-odds)
   # estimated by transforming from probability to linear predictor scale
   hat.Delta.AC <- log(hat.mu.A/(1-hat.mu.A)) - log(hat.mu.C/(1-hat.mu.C))
