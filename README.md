@@ -24,14 +24,13 @@ The `doSNOW` package is used to parallelize the performance of the methods, dist
 
 The code presented here was prepared in `RStudio` using `R` version `3.6.3` in a Windows architecture, with 64-bit operating system. The following packages and version were used:
 
-* `boot 1.3.24` required for use of the non-parametric bootstrap in MAIC and maximum-likelihood parametric G-computation
+* `boot 1.3-24` required for use of the non-parametric bootstrap in MAIC and maximum-likelihood parametric G-computation
 * `copula 0.999.20` simulates covariates from a multivariate Gaussian copula for the covariate simulation step of maximum-likelihood parametric G-computation and Bayesian parametric G-computation. 
-
 * `doSNOW 1.0.18` used in combination with `foreach()` to start up local clusters that distribute parallel tasks to different cores
 * `dplyr 1.0.2` for data manipulation
 * `ggplot2 3.3.2` to plot the simulation study results (Figures 2-4 in the article)
 * `gridExtra 2.3` to plot the simulation study results (Figures 2-4 in the article)
-* `MASS 7.3.51.5` to simulate correlated covariates in the data-generating process for the simulation study, drawing from a multivariate normal distribution 
+* `MASS 7.3-51.5` to simulate correlated covariates in the data-generating process for the simulation study, drawing from a multivariate normal distribution 
 * `parallel 3.6.3` to detect the number of CPU cores
 * `rstanarm 2.21.1` for fitting outcome regressions and drawing outcomes from their posterior predictive distribution in Bayesian parametric G-computation.  
 
