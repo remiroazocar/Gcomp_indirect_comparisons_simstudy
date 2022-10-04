@@ -4,7 +4,7 @@
 ### *remiroantonio@gmail.com*
 ### *2021*
 
-This repository contains the R code used for my paper "Parametric G-computation for Compatible Indirect Treatment Comparisons with Limited Individual Patient Data", co-authored with [Prof. Gianluca Baio][2] and [Prof. Anna Heath][3]. 
+This repository contains the R code used for my paper [Parametric G-computation for Compatible Indirect Treatment Comparisons with Limited Individual Patient Data][1], co-authored with [Prof. Gianluca Baio][2] and [Prof. Anna Heath][3]. 
 
 ## Utilizing the Scripts
 
@@ -34,5 +34,6 @@ The code presented here was prepared in `RStudio` using `R` version `3.6.3` in a
 * `parallel 3.6.3` to detect the number of CPU cores
 * `rstanarm 2.21.1` for fitting outcome regressions and drawing outcomes from their posterior predictive distribution in Bayesian parametric G-computation.  
 
+[1]: https://doi.org/10.1002/jrsm.1565
 [2]: http://www.statistica.it/gianluca/
 [3]: https://sites.google.com/site/annaheathstats/
