@@ -12,7 +12,7 @@ In order to use this repository, the user must first download a copy to their lo
 
 |          Script           | Explanation                                                  |
 | :-----------------------: | ------------------------------------------------------------ |
-|       `gen_data.R`        | Specifies the settings of the simulation settings and saves them in `"./binary_settings.RData"`. Generates the data for the simulation study according to the settings (saving the data to the `"./Data/"` subdirectory) |
+|       `gen_data.R`        | Specifies the settings of the simulation study and saves them in `"./binary_settings.RData"`. Generates the data for the simulation study according to the settings (saving the data to the `"./Data/"` subdirectory) |
 | `population_adjustment.R` | Performs the population-adjusted indirect comparison methods on the simulated data (saving the point estimates and variances to the `"./Results/"` subdirectory) |
 |       `analysis.R`        | Processes the results of the simulation study and computes and graphs the relevant performance metrics (the analyses are saved to the `"./Analysis/"` subdirectory) |
 
