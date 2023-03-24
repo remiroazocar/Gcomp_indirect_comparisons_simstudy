@@ -158,7 +158,7 @@ gcomp.ml.wrapper <- function(data.AC, data.BC, resamples, N_star) {
 gcomp.bayes.wrapper <- function(data.AC, data.BC, n.chains, warmup, iters,
                                 N_star) {
   # Inputs: data.AC - AC individual patient-level data; data.BC - BC aggregate-level data;
-  # n.chains, burnin, iters - MCMC info
+  # n.chains, warmup, iters - MCMC info
   # N_star - size of simulated BC pseudo-population (high for small Monte Carlo error)
   # matrix of pairwise correlations between IPD covariates  
   rho <- cor(data.AC[,c("X1","X2","X3","X4")]) 
